@@ -4,11 +4,8 @@ void main() {
   /*Solution sol = new Solution();
   System.out.println(Arrays.toString(sol.solution(new int[] {4, 2, 6, 1, 7, 6}, 3 )));
 */
-  String s = "fuck you";
-  System.out.println(s);
-  for (int i = 0; i < 3; i++){
-    s += s.substring(0, 1);
-    System.out.println(s);
-  }
-
+  String s = "aAb1B2cC34oOp";
+  Solution sol = new Solution();
+  System.out.println(sol.solution(s));
 }
+//            System.out.println("c = " + c + " int c = " + (int)c );
