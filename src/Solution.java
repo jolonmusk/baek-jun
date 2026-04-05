@@ -1,13 +1,7 @@
-class Solution {
-    public int[] solution(int[] array) {
-        int[] answer = new int[]{0,0};
-        for(int i = 0; i < array.length; i++){
-            if(array[i] > answer[0]){
-                answer[0] = array[i];
-                answer[1] = i;
-            }
-        }
+import java.util.Arrays;
 
-        return answer;
+class Solution {
+    public int[] solution(int[] arr, int k) {
+        return Arrays.stream(arr).map(i -> k % 2 == 0 ? i + k : i * k).toArray();
     }
 }
